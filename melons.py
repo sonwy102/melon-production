@@ -31,6 +31,12 @@ class Melon(object):
                                              self.weight,
                                              self.melon_type)
 
-# FIXME: Add Squash class definition here.
 class Squash(Melon):
+    """Winter squash subclass"""
     
+    def prep(self):
+        """Prepare the squash"""
+
+        super().prep()
+        robots.painterbot.paint(self)
+
